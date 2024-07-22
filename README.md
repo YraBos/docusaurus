@@ -1,2 +1,0 @@
-# sdocs
-Сайт, Docusaurus
