@@ -1,5 +1,5 @@
 import {themes as prismThemes} from 'prism-react-renderer';
-  
+
 module.exports = {
   title: 'Документация',
   tagline: 'mydocs',
@@ -8,8 +8,8 @@ module.exports = {
   url: 'https://mygit.github.io',
   baseUrl: '/',
 
-  organizationName: 'mygit', 
-  projectName: 'mygit.github.io', 
+  organizationName: 'mygit',
+  projectName: 'mygit.github.io',
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -37,12 +37,32 @@ module.exports = {
           alt: 'Документация',
           src: 'img/logo.svg',
         },
-      },
+
+      // добавляем ссылки в навигационной панели
+      items: [
+        {
+            type: 'doc',
+            position: 'left',
+            label: 'Создать',
+            docId: 'create/create',
+        },
+        {
+            type: 'doc',
+            position: 'left',
+            label: 'Редактировать',
+            docId: 'edit/start',
+        },
+        {
+           label: 'MarkDown',
+           to: 'https://skillbox.ru/media/code/yazyk-razmetki-markdown-shpargalka-po-sintaksisu-s-primerami/',
+        },
+      ],
+     }, // navbar
+
+
       prism: {
         theme: prismThemes.github,
         darkTheme: prismThemes.dracula,
       },
     }),
 };
-
-
