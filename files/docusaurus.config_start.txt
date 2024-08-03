@@ -1,7 +1,7 @@
 import {themes as prismThemes} from 'prism-react-renderer';
   
 module.exports = {
-  title: 'Документация',
+  title: 'Docusaurus',
   tagline: 'mydocs',
   favicon: 'img/favicon.ico',
 
